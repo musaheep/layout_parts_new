@@ -4,17 +4,14 @@
 
 /* 回答はここに書いてね */
 
-
-.frame{
+.frame {
   border:5px solid #222;
   width:540px;
   height:100%;
   margin:0 auto;
   border-radius:30px;
   position:relative;
-
 }
-
 
 .frame:before {
   content: "";
@@ -25,9 +22,7 @@
   border-style:solid;
   border-width:20px;
   border-color:#222 transparent transparent  transparent;
-
 }
-
 
 .frame:after {
   content: "";
@@ -38,32 +33,14 @@
   border-style:solid;
   border-width:20px;
   border-color:#fff transparent transparent  transparent;
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.paragraph{
+.paragraph {
   font-size:16px;
   line-height:16px;
   width:500px;
   padding:20px;
 }
-
-
-
-
-
 
 /* .test{
 width:0;
@@ -77,19 +54,6 @@ margin:0 auto;
 top:500px;
 left:100px;
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* .balloon2 {
   position: relative;
