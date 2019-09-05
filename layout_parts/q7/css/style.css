@@ -3,3 +3,172 @@
 /* 回答はここに書いてね */
 
 /* 回答はここに書いてね */
+
+
+/* 全体の設定 */
+
+
+/* ー Q7-1 floatでの横並び ー */
+ .clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+.q7--float .q7__inner{
+  height:212px;
+
+
+}
+
+.q7--float .q7__box{
+  margin-left:50px;
+  float:left;
+  /* width:250px; */
+  box-sizing:border-box;
+  font-size:16px;
+
+}
+
+
+
+.q7--float .q7__box:first-child {
+  margin-left: 0;
+
+}
+
+.q7float .q__7box{
+  float:left;
+  font-size:16px;
+  box-sizing:border-box;
+}
+
+.q7 .q7__box{
+  width:225px;
+
+
+}
+
+
+
+
+
+
+
+
+/* ー Q7-2 tableでの横並び ー */
+
+.q7--table .q7__innner{
+display:table;
+}
+
+
+
+.q7--table .q7__box{
+display:table-cell;
+vertical-align:middle;
+/* text-align:center;*/
+padding-left:50px;
+
+}
+
+.q7--table .q7__box:first-child{
+padding-left:0px;
+}
+
+
+
+
+
+
+/* ー Q7-3 inline-blockでの横並び ー */
+
+.q7--inlineblock .q7__inner{
+/* display:inline-block; */
+font-size:0;
+}
+
+
+.q7--inlineblock .q7__box{
+display:inline-block;
+margin-left:50px;
+box-sizing:border-box;
+vertical-align:middle;
+font-size:16px;
+}
+
+.q7--inlineblock .q7__box:first-child{
+    margin-left:0px;
+
+}
+
+
+
+
+
+/* ー Q7-4 flexでの横並び ー */
+
+.q7--flex .q7__inner{
+  display:flex;
+  justify-content: space-around;
+  align-items:flex-end;
+}
+
+.q7--flex .q7__box {
+  font-size: 16px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+
+/* ー Q7-5 inline-blockとmarginでの横並び ー */
+/* .is-full{
+  width:5000px;
+} */
+
+
+.q7__inner.is-full{
+
+
+}
+
+
+
+
+
+.first-box{
+  display:inline-block;
+  vertical-align:top;
+
+}
+
+.q7--margin .q7__box:first-child{
+  width:300px;
+}
+
+.q7--margin .is-full{
+  font-size:0;
+}
+
+
+.q7--margin .q7__box__text{
+  font-size:16px;
+}
+
+
+
+
+
+
+
+.second-box{
+  display:inline-block;
+}
+
+.q7--margin .q7__box:last-child{
+  width:100%;
+  margin-left:-300px;
+  padding-left:350px;
+  box-sizing:border-box;
+}

@@ -25,33 +25,33 @@
                この問題は特に難しいプロパティは使いませんので、普通にやれば簡単にボタンを作ることができます。
                ただ、意識していただきたいのは、classを適切にふることで共通化できるスタイルは共通化してしまうということです。
                この問題もHTMLはすでに記述してありますので、ボタンのdivにclassを付与してスタイルを当ててください。
-               .q8--btnにfont-sizeを0として指定してあるので必ずボタン部分でfont-sizeを指定してください。
+               .q8-btnにfont-sizeを0として指定してあるので必ずボタン部分でfont-sizeを指定してください。
           -->
           <!-- 回答はここに書いてね -->
           <!-- すでについてるクラスにはstyleを指定しない。styleをつける場合は自分で新たにクラスをつけること -->
           <!-- 新たにタグは追加しなくてもできます。 -->
           <div class="q8 q8--btn">
             <p class="q8__title">ー small ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="small--btn  common--btn">common</div>
+            <div class="small--btn error--btn">error</div>
+            <div class="small--btn disabled--btn">disabled</div>
+            <div class="small--btn shadow--btn">shadow</div>
           </div>
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー middle ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="middle--btn common--btn">common</div>
+            <div class="middle--btn error--btn">error</div>
+            <div class="middle--btn disabled--btn">disabled</div>
+            <div class="middle--btn shadow--btn">shadow</div>
           </div>
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー large ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="large--btn common--btn">common</div>
+            <div class="large--btn error--btn">error</div>
+            <div class="large--btn disabled--btn">disabled</div>
+            <div class="large--btn shadow--btn">shadow</div>
           </div>
           <!-- 回答はここに書いてね -->
         </div>
@@ -98,12 +98,71 @@
           -->
           <!-- 回答はここに書いてね -->
           <!-- すでについてるクラスにはstyleを指定しない。styleを付ける場合は自分で新たにクラスをつけること -->
-          <div class="q8">
-            
-          </div>
-          <!-- 回答はここに書いてね -->
+        <div class="q8">
+         <form class="" action="index.html" method="post">
+
+           <div class="form-title">
+             <p class="form-title-text">Form Exercise</p>
+           </div>
+           <div class="form-wrapper">
+             <div class="form-main">
+               <div class="in-form-main">
+                 <ul>
+                   <div class="item">
+                     <label class="label name">名前<span>*</span></label>
+                     <input class="inputs input-focus" type="text" name="name" required>
+                   </div>
+                   <div class="item">
+                     <label class="label gender">性別</label>
+                     <div class="sex-inputs">
+                       <label for="male">
+                         <input id="male" class="in-sex-inputs" type="radio" name="sex" value="male">
+                         <span class="mark">男性</span>
+                       </label>
+                       <label for="female">
+                        <input id="female" class="in-sex-inputs" type="radio" name="sex" value="female">
+                        <span class="mark">女性</span>
+                       </label>
+                     </div>
+                   </div>
+                   <div class="item out-from">
+                     <label class="label ">出身</label>
+                     <select name="from">
+                       <option value="tokyo">東京</option>
+                       <option value="saitama">埼玉</option>
+                       <option value="tiba">千葉</option>
+                       <option value="kanagawa">神奈川</option>
+                     </select>
+                   </div>
+                   <div class="item">
+                     <label class="label e-mail " >Eメール<span>*</span></label>
+                     <input class="inputs input-focus" type="email" name="email" placeholder="ex) hoge@gmail.com" required>
+                   </div>
+                   <div class="item">
+                     <label class="label" >電話番号</label>
+                     <input class="inputs input-focus" type="tel" name="tel" placeholder="ex) 08012345678">
+                   </div>
+                   <div class="age item">
+                    <label>
+                     <input class="check"  type="checkbox" name="age" value="age" >
+                     <span class="age-mark">20歳以上です</span>
+                    </label>
+                   </div>
+                 </ul>
+               </div>
+               <div class="btn-area">
+                 <input id="submit" class="submit" type="submit" value="送信">
+               </div>
+             </div>
+             <div class="form-side">
+               <textarea class="text-input input-focus" placeholder="何かあれば入力してください。"></textarea>
+             </div>
+           </div>
+          </form>
         </div>
+       </div>
       </div>
+     </div>
     </div>
-  </body>
-</html>
+   </body>
+ </html>

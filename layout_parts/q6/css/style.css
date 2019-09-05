@@ -2,4 +2,153 @@
 
 /* 回答はここに書いてね */
 
+
 /* 回答はここに書いてね */
+
+
+
+
+
+/* 左右中央寄せ */
+
+
+.q6__box__inner{
+  text-align:center;
+
+}
+
+
+.paragraph1 {
+  display:inline-block;
+  background-color:#e6f2ff;
+  width:90px;
+  text-align:center;
+  padding:10px 0;
+  /* margin:auto; */
+}
+
+
+
+.paragraph2{
+  background-color:#e6f2ff;
+  width:90px;
+  text-align:center;
+  padding:10px 0;
+  margin:0 auto;
+}
+
+
+
+
+/* 天地左右中央寄せ */
+
+
+
+.q6--around.table{
+  display:table;
+}
+
+
+
+.table-out{
+  text-align:center;
+  vertical-align:middle;
+  display:table-cell;
+}
+
+.table-paragraph{
+  display:inline-block;
+  background-color:#fff;
+  text-align:center;
+  padding:10px;
+
+}
+
+
+
+
+
+
+
+
+.q6--around.flex{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+
+}
+
+
+
+
+.flex-out{
+  /* display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100%; */
+}
+
+
+
+
+.flex-paragraph{
+background-color:#fff;
+padding:10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.q6--position .q6__box{
+  position:relative;
+
+}
+.q6__box.is-stable .q6__box__inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.q6__box.is-flexible .q6__box__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/* .q6--position .q6__box{
+  position:relative;
+
+}
+.q6__box.fixed .q6__box__inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.q6__box.variable .q6__box__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+} */
